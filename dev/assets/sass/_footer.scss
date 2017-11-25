@@ -20,6 +20,11 @@
     vertical-align: middle;
     margin-right: 5px;
   }
+  &__sign {
+    font-family: $second_font;
+    font-size: 14px;
+    color: $color_white;
+  }
   &__link {
     font-family: $second_font;
     font-size: 14px;

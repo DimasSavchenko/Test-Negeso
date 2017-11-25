@@ -66,14 +66,17 @@ gulp.task('build', ['html', 'sass'], function() {
     ]).pipe(gulp.dest('./rel'));
 
   var buildCss = gulp.src([
-    './dev/assets/css/main.css',
+    './dev/assets/css/*.css',
     ]).pipe(gulp.dest('./rel/assets/css'));
   
   var buildJs = gulp.src([
-    './dev/assets/scripts/libs/scripts.min.js',
     './dev/assets/scripts/*.js',
     ]).pipe(gulp.dest('./rel/assets/scripts'));
-
+  
+  var buildJsLibs = gulp.src([
+    './dev/assets/scripts/libs/*.js',
+  ]).pipe(gulp.dest('./rel/assets/scripts/libs'));
+   
   var buildImg = gulp.src([
     './dev/assets/img/**',
   ]).pipe(gulp.dest('./rel/assets/img'));

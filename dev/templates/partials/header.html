@@ -1,32 +1,42 @@
-<header class="header">
+<header class="header" id="home">
   <div class="header__top">
     <div class="container">
       <div class="header__top-line">
         <div class="header__logo">
-          <a href="#" class="header__logo">
+          <a href="#">
             <img src="./assets/img/header/header-logo.png" alt="logo-img">
           </a>
         </div>
-        <nav class="header__nav">
+        <div class="burger">
+          <span class="burger__line burger__line--top"></span>
+          <span class="burger__line burger__line--middle"></span>
+          <span class="burger__line burger__line--bottom"></span>
+        </div>
+        <nav class="header__nav nav">
           <ul class="nav__menu">
             <li class="nav__item">
-              <a href="#" class="nav__link">HOME</a>
+              <a href="#home" class="nav__link">HOME</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">DIENSTEN</a>
+              <a href="#services" class="nav__link">DIENSTEN</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">PROJECTEN</a>
+              <a href="#products" class="nav__link">PROJECTEN</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">CONTACT</a>
+              <a href="#contacts" class="nav__link">CONTACT</a>
             </li>
           </ul>
         </nav>
       </div>
     </div>
   </div>
-  <div class="header__slider">
-    <img src="./assets/img/header/header-bg-1.png" alt="slider">
+  <div class="header__sl sl">
+    <div class="sl__slide">
+      <img src="./assets/img/header/header-sl-1.png" alt="slider-img" class="sl__img">
+    </div>
+    <div class="sl__slide">
+      <img src="./assets/img/header/header-sl-2.png" alt="slider-img" class="sl__img">
+    </div>
   </div>
 </header>

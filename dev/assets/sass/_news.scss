@@ -60,8 +60,8 @@
 }
 
 .date {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   color: $color_white;
   background-color: $color_blue;
   text-align: center;
@@ -82,10 +82,10 @@
     display: none;
   }
   &__numb {
-    font-size: 14px;
+    font-size: 16px;
   }
-  &__month {
-    font-size: 12px;
+  &__year {
+    font-size: 14px;
   }
 }
 

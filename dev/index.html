@@ -8,48 +8,59 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/slick.css">
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
   <div class="wrap">
-    <header class="header">
+    <header class="header" id="home">
       <div class="header__top">
         <div class="container">
           <div class="header__top-line">
             <div class="header__logo">
-              <a href="#" class="header__logo">
+              <a href="#">
                 <img src="./assets/img/header/header-logo.png" alt="logo-img">
               </a>
             </div>
-            <nav class="header__nav">
+            <div class="burger">
+              <span class="burger__line burger__line--top"></span>
+              <span class="burger__line burger__line--middle"></span>
+              <span class="burger__line burger__line--bottom"></span>
+            </div>
+            <nav class="header__nav nav">
               <ul class="nav__menu">
                 <li class="nav__item">
-                  <a href="#" class="nav__link">HOME</a>
+                  <a href="#home" class="nav__link">HOME</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">DIENSTEN</a>
+                  <a href="#services" class="nav__link">DIENSTEN</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">PROJECTEN</a>
+                  <a href="#products" class="nav__link">PROJECTEN</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">CONTACT</a>
+                  <a href="#contacts" class="nav__link">CONTACT</a>
                 </li>
               </ul>
             </nav>
           </div>
         </div>
       </div>
-      <div class="header__slider">
-        <img src="./assets/img/header/header-bg-1.png" alt="slider">
+      <div class="header__sl sl">
+        <div class="sl__slide">
+          <img src="./assets/img/header/header-sl-1.png" alt="slider-img" class="sl__img">
+        </div>
+        <div class="sl__slide">
+          <img src="./assets/img/header/header-sl-2.png" alt="slider-img" class="sl__img">
+        </div>
       </div>
     </header>
-    <section class="section products">
+    <section class="section products" id="products">
       <div class="container">
         <div class="products__block">
           <div class="products__item">
             <div class="products__pic">
-              <img src="./assets/img/products/products-img-1.png" alt="products-img" class="products__img">        
+              <img src="./assets/img/products/products-img-1.png" alt="product-facilities-outdoor" class="products__img">       
             </div>
           </div>
           <div class="products__item products__item--text">
@@ -69,13 +80,13 @@
           </div>
           <div class="products__item">
             <div class="products__pic">
-              <img src="./assets/img/products/products-img-2.png" alt="products-img" class="products__img">
+              <img src="./assets/img/products/products-img-2.png" alt="product-facilities-indoor" class="products__img">
             </div>
           </div>      
         </div>
       </div>
     </section>
-    <section class="section services">
+    <section class="section services" id="services">
       <div class="services__bg">
         <img src="./assets/img/services/services-bg.png" alt="services-pic" class="servicec__pic">
       </div>
@@ -180,7 +191,7 @@
         </div>
       </div>
     </section>
-    <section class="section contacts">
+    <section class="section contacts" id="contacts">
       <div class="container">
         <div class="title contacts__title">
           <p class="title__text">Wilt u weten wat wij voor u kunnen betekenen?</p>
@@ -196,13 +207,13 @@
       <div class="container">
         <div class="footer__container">
           <div class="footer__item">
-            <a href="#" class="footer__link">© ALS ZorgThuis 2017 |</a>
-            <a href="#" class="footer__link"> Privacy Statement |</a>
-            <a href="#" class="footer__link"> Disclaimer</a>
+            <span class="footer__sign">@ALS ZorgThuis 2017 |</span>
+            <span class="footer__sign"> Privacy Statement |</span>
+            <span class="footer__sign"> Disclaimer</span>
           </div>
           <div class="footer__item">
             <a href="#"><img src="./assets/img/footer/footer-logo.png" alt="footer-logo" class="footer__logo"></a>
-            <a href="#" class="footer__link">Web Design & CMS by Negeso ®</a>
+            <a href="https://www.negeso.com/" target="blank" class="footer__link">Web Design & CMS by Negeso ®</a>
           </div>
         </div>
       </div>
@@ -214,6 +225,9 @@
     crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="/assets/scripts/libs/jquery-3.2.1.min.js"><\/script>')</script>
   
+  <script src="./assets/scripts/libs/slick.min.js"></script>
   <script src="./assets/scripts/common.js"></script>
+  <script src="./assets/scripts/burger.js"></script>
+  <script src="./assets/scripts/slick.js"></script>
 </body>
 </html>
