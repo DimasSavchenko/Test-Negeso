@@ -1,0 +1,22 @@
+.footer {
+  background-color: $bgcolor_blue;
+  padding: 50px 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  &__link {
+    font-family: $second_font;
+    font-size: 14px;
+    color: $color_white;
+    transition: border .3s linear;
+    &:hover {
+      color: $color_navy;
+      padding-bottom: 10px;
+    }
+  }
+}

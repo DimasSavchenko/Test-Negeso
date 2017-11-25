@@ -1,0 +1,50 @@
+    html {
+    font-size: $font-size-base;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    @include font-size(10px);
+    line-height: 2.4rem;
+    font-weight: 400;
+    min-width: 320px;
+}
+
+strong,
+b,
+.strong {
+    font-weight: 600;
+}
+
+figcaption {
+    text-align: right;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.img--responsive {
+    display: block;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: $color_black-light;
+    text-transform: uppercase;
+    line-height: 1.5;
+}

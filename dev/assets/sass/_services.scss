@@ -1,0 +1,83 @@
+.services {
+  background-image: url("../img/services/services-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 0 115px;
+  @media (max-width: 991px) {
+    padding: 30px 0;
+  }
+  &__title {
+    color: $color_white;
+    padding-bottom: 70px;
+    @media (max-width: 991px) {
+      padding-bottom: 25px;
+    }
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    &:first-of-type {
+      margin-bottom: 30px;
+      @media (max-width: 991px) {
+        margin-bottom: 0;
+      }
+    }
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+  &__item {
+    width: 32%;
+    background-color: $color_blue-light;
+    padding: 20px 20px 50px;
+    text-align: center;
+    @media (max-width: 991px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  &__icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: $color_blue-dark;
+  }
+  &__name {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    color: $color_white;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__text {
+    color: $color_white;
+    font-size: 14px;
+  }
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  display: block;
+  &--check {
+    background-image: url("../img/services/check-mark.png");
+  }
+  &--list {
+    background-image: url("../img/services/check-list.png");
+  }
+  &--clock {
+    background-image: url("../img/services/clock.png");
+  }
+  &--user {
+    background-image: url("../img/services/user.png");
+  }
+  &--users {
+    background-image: url("../img/services/users.png");
+  }
+  &--cogs {
+    background-image: url("../img/services/cogs.png");
+  }
+}

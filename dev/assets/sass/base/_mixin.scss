@@ -1,0 +1,52 @@
+//------------------------------------------------------------------------------
+//  Set a rem font size with pixel fallback by Nicolas Gallagher
+//
+//	Rem is similar to the em value, but instead of being relative to the parent
+//	element it’s relative to the font-size set in the <html>.
+//------------------------------------------------------------------------------
+//	Сomposed:
+// 	@mixin font-size()
+//	@function calculateRem()
+//------------------------------------------------------------------------------
+//  Url: https://webdesign.tutsplus.com/tutorials/a-simple-responsive-grid-made-even-better-with-sass--cms-21540
+//------------------------------------------------------------------------------
+
+@function calculateRem($size) {
+	$remSize: $size / $font-size-base;
+	@return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+}
+
+//-------------font face--------------------
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false ) {
+	@font-face { 
+		font-family: $font-family;
+		font-weight: $weight;
+		font-style: $style;
+	
+		@if $asset-pipeline == true {
+			src: font-url('#{$file-path}.eot');
+			src: font-url('#{$file-path}.eot?#iefix') format('embedded-opentype'), 
+				font-url('#{$file-path}.woff') format('woff'), 
+				font-url('#{$file-path}.ttf') format('truetype');
+		}
+		@else {
+			src: url('#{$file-path}.eot');
+			src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), 
+				url('#{$file-path}.woff') format('woff'), 
+				url('#{$file-path}.ttf') format('truetype');
+		}
+	}
+}
+
+//-------------input placeholder---------------------
+@mixin placeholder($color, $font){
+	&::-webkit-input-placeholder { color:$color; font-family:$font;}
+	&::-moz-placeholder { color:$color; font-family:$font;}
+	&:-ms-input-placeholder { color:$color; font-family:$font;}
+	&:-moz-placeholder { color:$color; font-family:$font;}
+}

@@ -1,0 +1,28 @@
+{
+  "name": "blank-template",
+  "version": "1.0.0",
+  "description": "Technology stack:  - gulp - sass (scss)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimasSavchenko/MyBoilerPlate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimasSavchenko/MyBoilerPlate/issues"
+  },
+  "homepage": "https://github.com/DimasSavchenko/MyBoilerPlate#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-autoprefixer": "^4.0.0"
+  }
+}
