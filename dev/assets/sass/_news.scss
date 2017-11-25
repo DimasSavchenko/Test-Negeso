@@ -94,7 +94,7 @@
   font-size: 13px;
   background-color: $color_blue;
   color: $color_white;
-  border: none;
+  border: 1px solid $color_white;
   border-radius: 5px;
   cursor: pointer;
   font-family: $primary_font;
@@ -104,7 +104,12 @@
     padding: 30px 90px;
     font-size: 20px;
     font-weight: 700;
+    border: 1px solid $color_blue;
     text-transform: uppercase;
+    @media (max-width: 767px) {
+      padding: 15px 20px;
+      font-size: 14px;
+    }
   }
   &:hover {
     color: $color_blue;

@@ -9,7 +9,6 @@ body {
     @include font-size(10px);
     line-height: 2.4rem;
     font-weight: 400;
-    min-width: 320px;
 }
 
 strong,
@@ -47,4 +46,7 @@ img {
     color: $color_black-light;
     text-transform: uppercase;
     line-height: 1.5;
+    @media (max-width: 767px) {
+        font-size: 20px;
+    }
 }
